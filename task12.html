@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <label for = "name">Student Name : </label>
+    <input type ="text" id="name" placeholder = "enter your full name" required><br>
+    <label for = "email">Email : </label>
+    <input type ="email" id="email" placeholder = "enter your email" required><br>
+    <label for="department">Department : </label>
+    <select name="department" id="department">
+        <option value="B.SC Computer Science">B.Sc Computer Science</option>
+        <option value ="B.A Tamil">B.A Tamil</option>
+        <option value ="B.Sc Physics">B.Sc Physics</option>
+    </select>
+    <fieldset>
+        <legend>Course Selection</legend>
+        <input type="checkbox" id="Python" name="Course Selection" value="Python">
+        <label for="Python">Python</label>
+        <input type ="checkbox" id="java" name ="Course Selection" value ="java">
+        <label for = "java">java</label>
+        <input type="checkbox" id="react" name ="Course Selection" value="react">
+        <label for = "react">react</label>
+    </fieldset>
+    <label for ="comments">Comments : </label>
+    <textarea id="comments" name="comments" placeholder ="your comments.."></textarea><br>
+    <button type="submit">submit</button>
+</body>
+</html>

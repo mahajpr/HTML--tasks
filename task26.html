@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hospital Appointment System</h1>
+    <form action="/submit-patient" method="POST">
+        <label for="name">Full Name : </label>
+        <input type="text" id="name" placeholder="enter your name" required><br><br>
+        <label for = "dob">Date of Birth : </label>
+        <input type="text" id="dob" placeholder="enter your date of birth" required><br><br>
+        <label for ="gender" >Gender : </label>
+        <input type="radio" id="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="gender" value="female">
+        <label for="female">Female</label><br><br>
+        <label for="contact">Phone number : </label>
+        <input type="text" id="contact" placeholder="enter your number" required><br><br>
+        <label for = "department">Department : </label>
+        <select>
+            <option value="Cardiology">Cardiology</option>
+            <option value="Pediatrics">Pediatrics</option>
+            <option value="Orthopedics">Orthopedics</option>
+        </select><br><br>
+        <label for="doctor">Doctor : </label>
+        <select>
+            <option value="Dr.John Doe">Dr.John Doe</option>
+            <option value="Dr. Smith">Dr. Smith</option>
+            <option value="Dr. Robert">Dr. Robert</option>
+            <option value="Dr. Sarah Lee">Dr. Sarah Lee</option>
+            <option value="Dr. Emily">Dr. Emily</option>
+        </select>
+    </form>
+    <p>Available dates</p>
+    <label for="john">Dr.John Doe</label>
+    <input type="radio" id="john" value="monday">
+    <label for="monday">Monday</label>
+    <input type="radio" id="john" value="wednesday">
+    <label for="wednesday">Wednesday</label>
+    <input type="radio" id="john" value="friday">
+    <label for="friday">Friday</label><br><br>
+    <label for="smith">Dr.Smith</label>
+    <input type="radio" id="smith" value="tuesday">
+    <label for="tuesday">Tuesday</label>
+    <input type="radio" id="smith" value="thrusday">
+    <label for="thrusday">Thursday</label>
+    <input type="radio" id="smith" value="saturday">
+    <label for="saturday">Saturday</label><br><br>
+    <table border="2">
+        <caption>available doctors and timing</caption>
+        <tr>
+            <th>Doctors</th>
+            <th>Time</th>
+            <th>Available dates</th>
+        </tr>
+        <tr>
+            <td>Dr.John Doe</td>
+            <th>10:00 am</th>
+            <td>monday</td>
+        </tr>
+        <tr>
+            <td>Dr.Smith</td>
+            <th>11:00 am</th>
+            <td>tuesday</td>
+        </tr>
+        <tr>
+            <td>Dr.Robert</td>
+            <th>1:00 pm</th>
+            <td>wednesay</td>
+        </tr>
+
+    </table>
+</body>
+</html>

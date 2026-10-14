@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Enterprise Employee Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#registration">Register Employee</a></li>
+                <li><a href="#directory">Employee Directory</a></li>
+                <li><a href="#departments">Departments</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="registration">
+            <h2>Employee Registration</h2>
+            <p>Fill out the fields below to add a new employee profile to the database.</p>
+            
+            <form action="/submit-employee" method="POST">
+                <fieldset>
+                    <legend>Professional Details</legend>
+                    <label for="emp-name">Full Name:</label>
+                    <input type="text" id="emp-name" name="empName" required placeholder="enter your name"><br><br>
+                    <label for="emp-email">Email Address:</label>
+                    <input type="email" id="emp-email" name="empEmail" required placeholder="enter your email"><br><br>
+                    <label for="emp-dept">Assigned Department:</label>
+                    <select id="emp-dept" name="empDepartment" required>
+                            <option value="">-- Select Department --</option>
+                            <option value="hr">Human Resources</option>
+                            <option value="eng">Engineering</option>
+                            <option value="mkt">Marketing</option>
+                            <option value="fin">Finance</option>
+                    </select><br><br>
+                    <label for="emp-role">Job Title:</label>
+                    <input type="text" id="emp-role" name="empRole" required placeholder="enter your job title"><br><br>
+                    <label for="emp-date">Hire Date:</label>
+                    <input type="date" id="emp-date" name="empHireDate" required><br><br>
+                    <button type="submit">Register Employee</button>
+                </fieldset>
+            </form>
+        </section>
+        <section id="directory">
+            <h2>Employee Directory</h2>
+            <p>Active roster records within the organization.</p>
+            
+            <figure>
+                <table border="2" cellspacing="2" cellpadding="3">
+                    <caption>Current Active Employees</caption>
+                    <thead>
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Job Title</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EMP001</td>
+                            <td>Alex Smith</td>
+                            <td>alex.smith@company.com</td>
+                            <td>Engineering</td>
+                            <td>Frontend Lead</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>EMP002</td>
+                            <td>Sarah Jenkins</td>
+                            <td>sarah.j@company.com</td>
+                            <td>Human Resources</td>
+                            <td>HR Generalist</td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>EMP003</td>
+                            <td>Michael Chang</td>
+                            <td>m.chang@company.com</td>
+                            <td>Marketing</td>
+                            <td>SEO Specialist</td>
+                            <td>On Leave</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
+        </section>
+
+        <section id="departments">
+            <h2>Corporate Departments</h2>
+            <p>Overview of organizational functional structures.</p>
+            
+            <article>
+                <h3>Engineering</h3>
+                <p>Responsible for product development, system infrastructure, and technical architecture.</p>
+                <ul>
+                    <li>Core focus: Scalability, code quality, and fast feature deployment.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Human Resources</h3>
+                <p>Manages workplace culture, talent acquisition, legal compliance, and internal employee growth.</p>
+                <ul>
+                    <li>Core focus: Recruitment, benefits management, and employee relations.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Marketing</h3>
+                <p>Drives brand exposure, corporate outreach strategies, and public marketing campaigns.</p>
+                <ul>
+                    <li>Core focus: Product market fit, growth operations, and social platforms.</li>
+                </ul>
+            </article>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Admin Dashboard Portal. All Rights Reserved.</p>
+    </footer>
+    <hr><hr>
+    
+</body>
+</html>
